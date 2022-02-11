@@ -1,0 +1,53 @@
+:root{
+    --s1: 300px;
+    --s2: 150px;
+}
+
+div{         
+    border-style: solid;
+    border-width : 5px;
+}
+
+.flex-container{
+    display: flex;
+    border-style: none;
+}
+
+#first{
+    max-width: 100%;
+}
+
+#second{
+    width: 100%;
+    flex-direction: column;
+}
+
+#third{
+    flex-direction: row;
+}
+
+#red{
+    border-color: red;
+    max-height: var(--s1);
+    min-height: var(--s1);
+    max-width: var(--s1);
+    min-width: var(--s1);
+}
+
+#green{
+    border-color: green;
+    height: calc(var(--s1)*0.2);
+}
+
+#blue{
+    border-color: blue;
+    height: var(--s1);
+    width: var(--s2);      
+}
+
+#yellow{
+    border-color: yellow;
+    height: var(--s2);
+    width: var(--s2);
+    align-self:flex-end;
+}
